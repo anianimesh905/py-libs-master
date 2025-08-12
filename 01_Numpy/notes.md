@@ -39,3 +39,49 @@ start = time.time()
 arr = arr + 1
 print("NumPy array:", time.time() - start, "seconds")
 ```
+
+NumPy will typically be much faster.
+
+## 5. TL;DR (One-liner Summary)
+
+NumPy is faster because it stores data in fixed-type, contiguous memory (ndarray) and processes it using optimized C code instead of slow Python loops.
+
+---
+
+# NumPy — Stage 2: Core Concepts — Array Creation
+
+## 1. Creating Arrays from Lists
+
+```python
+import numpy as np
+
+arr1 = np.array([1, 2, 3])  # 1D
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])  # 2D
+# NumPy will automatically pick the best dtype
+```
+
+## 2. Using NumPy Functions
+
+```python
+np.arange(0, 10, 2)    # [0, 2, 4, 6, 8]
+np.zeros((2, 3))       # 2x3 array of 0
+np.ones((3, 3))        # 3x3 array of 1
+np.full((2, 2), 7)     # 2x2 array filled with 7
+np.eye(3)              # 3x3 identity matrix
+```
+
+## 3. Random Arrays
+
+```python
+np.random.rand(2, 3)               # Random floats in [0, 1)
+np.random.randint(0, 10, (3, 3))   # Random integers
+np.random.randn(2, 3)              # Normal distribution (mean=0, std=1)
+```
+
+## 4. Data Types (`dtype`)
+
+```python
+arr = np.array([1.2, 3.5], dtype=int)
+print(arr.dtype)
+# Common: int32, int64, float32, float64, bool
+```
