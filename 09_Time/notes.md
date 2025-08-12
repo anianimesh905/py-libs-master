@@ -1,8 +1,3 @@
-Here’s your **`09_Others/time/notes.md`** — a complete **Time Module Cheatsheet** with ML/DL relevance, formatted to match the rest of your repo’s learning style.
-
----
-
-````markdown
 # ⏳ Python `time` Module — Full Cheatsheet (Data Science & ML/DL Focus)
 
 ## 📌 Overview
@@ -32,7 +27,9 @@ time.time()       # Seconds since epoch (float)
 time.ctime()      # Human-readable current time
 time.ctime(1700000000)  # Human-readable from timestamp
 ```
-````
+
+🔹 Unix Epoch = January 1, 1970, 00:00:00 UTC.
+All timestamps in time are measured in seconds since this point.
 
 ---
 
@@ -175,13 +172,3 @@ for _ in range(5):
 ---
 
 ✅ **Tip:** For working with dates in ML pipelines (e.g., time-series), the `datetime` module is often better. Use `time` for **timing & delays**, `datetime` for **date manipulation**.
-
-```
-
----
-
-Next, I can give you **`09_Others/time/examples.py`** so you have runnable examples for every section in the cheatsheet.
-That way, `09_Others/time/` will be complete in your repo.
-
-Do you want me to prepare the `examples.py` now?
-```
